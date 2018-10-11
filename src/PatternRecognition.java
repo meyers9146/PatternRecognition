@@ -1,3 +1,14 @@
+ /*
+ * Class: CMSC201
+ * Instructor: Gregoriy Grinberg
+ * Description: A program that requests a two-dimensional array of numbers from the user
+ * and analyzes it for four-in-a-row matching numbers
+ * I pledge that I have completed the programming assignment independently.
+ * I have not copied the code from a student or any source.
+ * I have not given my code to any student.
+ * Print your name here: Michael Meyers
+ */
+
 import java.util.Scanner;
 
 public class PatternRecognition {
