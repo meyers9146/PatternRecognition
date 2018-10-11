@@ -56,12 +56,12 @@ public class PatternRecognition {
 	}
 	
 	//Perform check for 4 consecutive numbers and return result
-	System.out.println("This matrix " + ((isConsecutive(matrix) == true )? "has":"does not have")
-	+ " a sequence of four consecutive numbers.");
+	System.out.println("This matrix " + ((isConsecutiveFour(matrix) == true )? "has":"does not have")
+	+ " a sequence of four matching numbers.");
 		
 	}
 	
-	public static boolean isConsecutive(int[][] values) {
+	public static boolean isConsecutiveFour(int[][] values) {
 	
 		for (int i = 0; i < values.length-3; i++) {
 			for (int j = 0; j < (values[0].length-3); j++) {
@@ -84,7 +84,7 @@ public class PatternRecognition {
 		}
 		//check opposite diagonal
 		for (int i = values.length; i > 2; i--) {
-			for (int j = values[0].length; j > 2; j++) {
+			for (int j = values[0].length; j > 2; j--) {
 				if (values[i][j] == values [i-1][j-1] && values[i-1][j-1] == values[i-2][j-2]
 						&& values[i-2][j-2] == values[i-3][j-3]) {
 					return true;
